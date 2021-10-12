@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXEMPLO DE GROUPING TAG</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkgray;
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        h1 {
+            box-shadow: inset 2px 1px 14px 6px rgba(0, 0, 0, 0.445);
+           /*text-shadow: 3px 2px 14px 6px blue;*/
+        }
+        /*O código abaixo não funcionou
+        h1{
+          box-shadow: lime;
+        }
+        header > h1{
+            box-shadow: rgb(31, 70, 31);
+        }*/
+        main{
+            background-color: whitesmoke;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        footer{
+            background-color: black;
+            text-align: center;
+            color: white;
+            padding: 4px;
+            margin: 0px;
+            border-radius: 3px;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside{ /*Indica que o "aside" é um elemento filho do "article" */
+            background-color: rgb(170, 148, 148);
+        }
+        article > h2{
+            background-color: lightslategray;
+        }
+        nav{
+            background-color: rgba(27, 28, 29, 0.308);
+            padding: 3px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.616);
+            border-radius: 4px;
+        }
+        nav > a{ /*Indica que o "a = link" é um elemento filho do "nav"  */
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover{ /*Indica que o "a" é um filho de "nav" e esta recebendo o pseudo-elemento ":hover"  */
+            text-decoration: underline;
+            color: darkred;
+        }
+        #bola{/*Pode ser usado para colocar uma borda redonda em uma imagem, para o seu site*/
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<!--ORGANIZAÇÃO SEMANTICA DE UM SITE EM HTML5-->
+<body> 
+    <header> <!--Indica um cabeçalho do site aonde vai os links do menu-->
+        <h1>Meu site</h1>
+        <nav> <!--Indica o menu de navegação com seus respectivos links-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!--Corpo principal do site aonde vão as seções,artigos,parágrafos,fotos etc-->
+        <section id="assuntos">
+            <article>
+                <h2>Esportes e politica</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda dignissimos nesciunt rerum quisquam laudantium error quae, dicta, est doloremque officiis aliquam. Exercitationem perferendis, nesciunt sit debitis beatae neque. Impedit, expedita!</p>
+            </article>
+            <article>
+                <h2>tecnologia</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde minus, dolor consequatur aliquam optio voluptate beatae tempora necessitatibus animi nemo error consequuntur nostrum consectetur placeat nobis provident asperiores suscipit voluptates.</p>
+            </article>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, esse atque, libero tempore rerum animi consectetur aliquid nulla cupiditate ut accusantium iure non provident at! Labore quo culpa neque aperiam.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva.</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer> <!--Indica um rodapé e tudo o que vai dentro dele-->
+        <p>Desenvolvido pelo curso em vídeo</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

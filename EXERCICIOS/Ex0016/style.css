@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+*{/* Cria um Parametro global das Css*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*ria um degradê na página*/
+body{
+    background-image: linear-gradient(to right, #ebcbb7, #e7ad8b);
+}
+/*Configuraçôes do main que gera o retângulo no meio da página*/
+main{
+    background-color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px  rgba(136, 109, 93, 0.589);
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1{
+    color: #f39209;
+    text-align: center;
+    text-shadow: 1px 1px 4px  rgb(109, 65, 3); 
+}
+
+h2{
+    color: #125189;
+}
+
+p{
+    text-align: justify;
+}
+
+/*OBS: 
+1°_Valores dos "box-shadow e text-shadow" 1° parametro quanto a sobra vai andar para o lado, 2° paramentro quanto vai andar para baixo,3° parametro  quanto a sobra vai espalhar e o 4° é a cor e transparência da sobra. 
+2°_Valores do "border-radius" 1° parâmetro lado superior e inferior/top_bottom, 2° Lado direito/left, 3° lado esquerdo/right. Colocando valores diferêntes pode-se criar várias formas*/

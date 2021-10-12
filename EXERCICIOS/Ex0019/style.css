@@ -1,0 +1,44 @@
+@charset "UTF_8";
+
+/* ID = identification/identificador.
+   Class = classes.
+   Em HTML é id em CSS é # ( id = # ) 
+   Em HTML é class em CSS é ponto ( class = (.)*/
+
+body{
+    background-color: rgb(126, 226, 126);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: rgb(24, 173, 24);
+}
+
+h2{
+    color: rgb(24, 104, 24);
+}
+
+#principal{
+    text-align: center;
+    background-color: rgb(24, 104, 24);
+    color: white;
+    border-radius: 20px;
+    box-shadow: 2px 5px 20px blue;
+}
+
+.basico{
+    color: rgb(10, 68, 10);
+}
+
+.intermediario{
+    color: rgb(124, 106, 6);
+    text-shadow: 5px 5px 15px yellowgreen;
+}
+
+.avancado{
+    color:rgb(226, 33, 27);
+}
+
+.destaque{
+    background-color: rgba(243, 219, 4, 0.521);
+}

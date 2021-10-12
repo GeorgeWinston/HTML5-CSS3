@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula sobre midias em html5</title>
+</head>
+<body>
+     <!--Aqui embaixo usei css no estilo "inline" para mudar a cor da fonte do cabeçalho-->
+    <h1 style="color: red;">Iamgens dinamicas</h1>
+    <hr style="background-color: springgreen;">
+    <p>Tente abrir este site em vários dispositivos diferentes ou simplesmente aumente e diminua
+    o tamanho do seu navegador</p>
+    <picture>
+        <!--Não importa a quantidade de imagens que vc vai usar,mas,tem sempre que começar da menor para a maior.Lembre-se q 
+            quanto mais imagens vc colocar mais seu site ira ficar pesado.-->
+        <source media="(max-width: 750px )" srcset="imagens/image_p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/image_m.png" type="image/png">
+        <img src="imagens/image_g.png" alt="imagem flexivel">
+    </picture>
+    <h1 style="color: Blue;">Reproduzindo Audios</h1>
+    <hr style="color: seagreen;">
+    <p>Vamos aprender a reproduzir audios em html5</p>
+    <!--<audio src="midias/beowulf_savior.mp3" controls autoplay></audio>-->
+    <!--Esta forma que esta embaixo nos permite converter o arquivo em vários formatos de áudio
+    usando os comandos "source, src e type" tais como: mp3,ogg,wav etc.Evitando assim,uma possível 
+    incompatibilidade do navegador.-->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midias/beowulf_savior.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador não consegue reproduzir áudios</p>
+    </audio>
+    <h1></h1>    
+</body>
+</html>

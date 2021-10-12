@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeito Hover</title>
+    <style>
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /*Esta linha de baixo diz que o parágrafo é filho da div, por causa do uso do sínal de >*/
+        div > p{
+            display: none; /*Esconde o parágrafo que esta na div pai.*/
+        }
+        /*aplica o efeito hover no parágrafo que esta na div*/
+        div:hover > p{
+            display: block; /*Faz com que o parágrafo reapareça*/
+            color: white;
+            background-color: red;
+            text-align: center;
+        }
+        
+        div:hover{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto</p>
+    <div>
+        Passe o mouse aqui!!
+        <p>TEXTO ESCONDIDOOOOOO!!!!!!</p>
+    </div>
+    <p>Fim do Exemplo!!!</p>
+    
+</body>
+</html>

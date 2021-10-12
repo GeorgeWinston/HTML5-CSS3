@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degradê com CSS</title>
+    <style>
+        *{/*Configurações globais das CSS*/
+            height: 100%;
+        }
+        /*Degradê usando graus/"deg" em sua especificação e valores em porcentagem nas cores */
+        body{
+            background-image: linear-gradient(30deg, white, blue 30%, green 70%);
+        }
+        /*Degradê usando  termos como " to bottom, to top etc" */
+        div{
+            background-image: linear-gradient(to top, yellow, red);
+            padding: 0;
+            height: 15%;
+            width: 100%;
+        }
+        /*Formatando o H1 dentro da div*/
+        div h1{
+            text-align: center;
+            padding: 5%;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>Testando gradiente</h1>
+    </div>
+</body>
+</html>
