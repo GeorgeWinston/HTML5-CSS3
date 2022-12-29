@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Teste de imagem de fundo</title>
+        <style>
+            body{
+                background-image: url('imagens/wallpaper001.jpg');
+            }
+            h1, h2{
+                color: #fff;
+                text-align: center;
+            }
+            div.quadrado{
+                display: inline-block;
+                border: 2px solid #000;
+                border-radius: 10px;
+                background-color: lightgray;
+                width:190px;
+                height:200px;
+            }
+            div#q01{
+                background-color: skyblue;
+            }
+            div#q02{
+                background-image: linear-gradient(to bottom, #ffff00, #ff0000);
+            }
+            div#q03{
+                background-image: url('imagens/pattern001.png');
+            }
+            div.conteiner{
+                display: flex;
+                border: 4px solid red;
+                background-image: url('imagens/wallpaper003.jpg');
+                margin-left: 5px;
+                padding: 6px;
+            }
+            div#q04{
+                border-radius: 50%;
+                background-image: url('imagens/pattern003.png');
+            }
+            div#q05{
+                border-radius: 25px;
+                background-image: url('imagens/pattern002.png');
+                margin-left: 5px;
+            }
+            div#q06{
+                border: 2px solid #fff;
+                background-image: url('imagens/wallpaper002.jpg');
+                margin-left: 7px;
+                border-radius: 15% 30%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Estudo de imagens para background</h1>
+        <hr>
+        <div class="quadrado" id="q01">
+        </div>
+        <div class="quadrado" id="q02">
+        </div>
+        <div class="quadrado" id="q03">
+        </div><br><br>
+        <hr>
+        <h2>Estes estão dentro de uma div container ,aonde ela mesma tem um background.</h2>
+        <div class="conteiner">
+            <div class="quadrado" id="q04"></div>
+            <div class="quadrado" id="q05"></div>
+            <div class="quadrado" id="q06"></div>
+        </div>
+    </body>
+</html>
