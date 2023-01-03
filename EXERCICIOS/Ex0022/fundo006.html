@@ -8,15 +8,22 @@
     <style>
         body{
             height: 100vh;
-            background-color: #000;
+           /*background-color: #000;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
+            /* Essas três propriedades abaixo faz com que a imagem de fundo fique fixa, não importando o tamanho do conteúdo da página. *
             background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            ------------------------------------------*/
+            /* Short-round background sempre será nesta ordem: color, image, position, repeat, (size: Embora a documentação indique usá-lo no shorthand ele não funciona,tem que ser colocado fora. ), attachment.*/
+            background: #000 url('imagens/wallpaper002.jpg') center center no-repeat /*cover*/ fixed;
             background-size: cover;
         }
         main{
             background-color: #fff;
-            width: 400px;padding: 10px;
+            max-width: 400px;
+            padding: 10px;
             margin: auto;
             border: 1px solid #00008b;
             border-radius: 10px;
