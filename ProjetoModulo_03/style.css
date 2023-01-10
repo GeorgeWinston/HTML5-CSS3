@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+    min-height: 100vh;
+    background-color: #a9a9a9;
+}
+header{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+header > h1{
+    padding-top: 50px;
+    /* text-transform: uppercase; Deixa todas as letras em maiusculas */
+    font-variant: small-caps;
+}
+header > p{
+    padding-bottom: 50px;
+}
+header a, footer a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
+}
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+/* Ajuda a criar o efeito paralax */
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+
+}
+section.normal{
+    background-color: #fff;
+    color: #000;
+}
+section.imagens{
+    background-color: #1d1c1c;
+    color: #fff;
+}
+section.imagens >p{
+    width: 400px;
+    background-color: #00000054;
+}
+footer{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
