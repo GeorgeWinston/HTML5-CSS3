@@ -8,6 +8,7 @@ html, body{
     min-height: 100vh;
     background-color: #a9a9a9;
 }
+/* Configurações do header */
 header{
     background-color: #000;
     color: #fff;
@@ -29,6 +30,7 @@ header a, footer a{
 header a:hover, footer a:hover{
     text-decoration: underline;
 }
+/* Configurações das sections */
 /* Ajuda a criar o efeito paralax */
 section{
     padding-top: 10vh;
@@ -49,6 +51,7 @@ section.imagens >p{
     width: 400px;
     background-color: #00000054;
 }
+/* Configurações do footer */
 footer{
     background-color: #000;
     color: #fff;
