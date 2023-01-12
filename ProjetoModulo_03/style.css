@@ -50,7 +50,7 @@ section{
     padding-left: 30px;
     line-height: 2em;
     font-family: var(--fonte3);
-    font-size: 3vw; /* Usando a "vw" no tamanho da fonte ela aumenta ou diminui conforme o tamanho da tela*/
+    font-size: 2vw; /* Usando a "vw" no tamanho da fonte ela aumenta ou diminui conforme o tamanho da tela*/
 }
 section.normal{
     background-color: #fff;
