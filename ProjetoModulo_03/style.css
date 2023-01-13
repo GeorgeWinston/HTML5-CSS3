@@ -52,6 +52,9 @@ section{
     font-family: var(--fonte3);
     font-size: 2vw; /* Usando a "vw" no tamanho da fonte ela aumenta ou diminui conforme o tamanho da tela*/
 }
+section > p{
+    padding-bottom: 2em;
+}
 section.normal{
     background-color: #fff;
     color: #000;
@@ -59,11 +62,24 @@ section.normal{
 section.imagens{
     background-color: #1d1c1c;
     color: #fff;
+    box-shadow: inset 6px 6px 13px 0px #000; /*Cria uma sombra interna nas iamgens das sections. Ajuda no efeito paralax*/
+    background-attachment: fixed;
 }
 section.imagens >p{
     display: inline-block;
     padding: 5px;
-    background-color: #00000054;
+    background-color: #00000093;
+    text-shadow: 2px 2px 0px #000;
+    box-shadow: 6px 6px 13px 0px #000;
+    border-radius: 0px 15px;
+}
+section#img001{
+    background-image: url('imagens/joaninha_02.webp');
+    background-position: center;
+    background-size: cover;
+}
+section#img002{
+    background-image: url('imagens/carta_01.jpg');
 }
 /* Configurações do footer */
 footer{
