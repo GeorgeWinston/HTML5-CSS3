@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse; /*Determina se as bordas da tabela serão juntas ou separadas*/
+        }
+        table.Mt{
+            background-image: linear-gradient(to bottom, #ff0000, #ffff00, #0000ff8a);
+            border: 3px solid #000;
+            color: #fff;
+            text-align: center;
+            font-weight: bolder;
+        }
+        table.Mt td.dados{
+            font-size: 20px;
+            color: #fff;
+            background-color: #000;
+        }
+        tr.linha{
+            background-color: #808080;
+        }
+        td{
+            border: 2px solid #000;
+            padding: 8px;
+        }
+        td.dado{
+            background-color: #ffff00;
+        }
+    </style>
+</head>
+<body>
+    <!-- HIERARQUIA DE TABELAS (SIMPLES)
+    Table = tabela
+        table row = linha de tabela
+            table header = cabeçalho de tabelas
+            table data = dados da tabela -->
+    <h1>Minha primeira tabela</h1>
+    <table>
+        <tr>  <!--Primeira linha-->
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="linha"> <!--Segunda linha-->
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+        <tr> <!--Terceira linha-->
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr> <!--Quarta linha-->
+            <td>A4</td>
+            <td class="dado">B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+    <!-- Daqui para baixo foi meus estudos -->
+    <hr> <hr>
+    <h2>Essa é minha tabela</h2>
+    <table class="Mt">
+        <tr>
+            <td class="dados">G</td>
+            <td>E</td>
+            <td>O</td>
+        </tr>
+        <tr>
+            <td>R</td>
+            <td>G</td>
+            <td>E</td>
+        </tr>
+        <tr>
+            <td class="dados">W</td>
+            <td>I</td>
+            <td>N</td>
+        </tr>
+        <tr>
+            <td>S</td>
+            <td>T</td>
+            <td>O</td>
+        </tr>
+        <tr>
+            <td>N</td>
+            <td class="dados">V</td>
+            <td>A</td>
+        </tr>
+    </table>
+</body>
+</html>
