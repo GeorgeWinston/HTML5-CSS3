@@ -11,3 +11,6 @@ table = tabela
 
 Obs:
 1º _ Seguir sempre a hierarquia das tabelas.O que vem primeiro sempre em primeiro.
+2° _ para fazer o alinhamento dos dados de uma tabela usa-se (text-align) para o 
+alinhamento horizontal e (vertical-align) para o alinhamento vertical. porém, para
+alinhar ao centro com o vertica-align usa-se "middle" ao ínves de "center".
