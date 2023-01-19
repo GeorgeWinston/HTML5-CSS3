@@ -38,6 +38,19 @@
         td.num{
             text-align: right;
         }
+        /* Daqui para baixo coloquei o código para criar o efeito zebrado na tabela. (2n) é igual a duas em duas, se quiser de três em três é só colocar nos parênteses (3n)__"odd ou 2n-1" deixa só as linhas impares pintadas e "even ou 2n" é par */
+        tbody > tr:nth-child(2n){
+            background-color: #808080;
+        }
+        /* pode ser usado desta forma também:
+        tbody > tr:nth-child(odd){
+            background-color: #fff;
+            font-weight: bolder;
+        }
+        tbody > tr:nth-child(even){
+            background-color: #808080;
+            text-decoration: underline;
+        }*/
     </style>
 </head>
 <body>
