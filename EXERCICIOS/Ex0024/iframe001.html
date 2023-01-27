@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudo de iframes</title>
+    <style>
+        iframe{
+            width: 400;
+            height: 250;
+        }
+    </style>
 </head>
     <body>
         <h1>Testando o uso de um iframe</h1>
@@ -13,9 +19,16 @@
         <h3>Abaixo o exemplo de um link com o uso da tag "iframe". Cria uma janela com o site de destino dentro do próprio site, como mostrado abaixo.</h3>
         <p>
             Acesando o site do 
-            <iframe src="https://www.cursoemvideo.com" frameborder="0"></iframe>para aprender a programar.</p>
+            <iframe src="https://www.cursoemvideo.com" frameborder="0" height="300" width="500">
+                <a href="https://www.cursoemvideo.com" target="_blank">curso em vídeo</a>
+            </iframe>para aprender a programar.</p>
     </body>
 </html>
 <!-- 
-    OBS: Existem sites que não aceitam o uso de iframes em seus sites.
+    OBS: 
+    1°_Existem sites que não aceitam o uso de iframes em seus sites.
+    2° _O tamanho padrão de um iframe é 300x150px.
+    3° _Use um link entre as tags do iframe para recurso em sites que não aceitam o uso do iframe.
+    4° _Para alterar o tamanho e largura do iframe você pode usar height e width logo após o frameborder.
+    5° _Os valores definidos no CSS sempre prevalecerão sobre os definidos diretamente no iframe.
  -->
