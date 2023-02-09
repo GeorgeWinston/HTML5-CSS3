@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de formulários</title>
+</head>
+<body>
+    <h1>meus estudos sobre formulários</h1>
+    <!-- Cria o formulário -->
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <!-- Cria os textos, caixas e vincula elas com o label -->
+        <p>
+            <label for="i-usu">Usuário</label>
+            <input type="text" name="usu" id="i-usu" required minlength="5" maxlength="15" size="10" placeholder="Digite seu nome" autocomplete="username">
+        </p>
+        <p>
+            <label for="i-sen">Senha</label>
+            <input type="password" name="sen" id="i-sen" required minlength="8" maxlength="16" size="8" placeholder="Digite a senha" autocomplete="current-password">
+        </p>
+        <!-- Cria os botões -->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
+<!-- 
+    minlenghts = minino de letras requeridas
+    maxlenghts = máximo de letras requeridas
+    size = determina o tamanho das caixas
+    placeholder = cria um texto que aparecerá na caixa indicando uma ação.
+    autocomplete = sugere uma forma de completar a senha ou nome do usuário, sendo ele colocado em cada input correspondente.Para que funcione tem,SEMPRE, que ter o autocomplete="on" na tag form.
+ -->
