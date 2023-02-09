@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos sobre formulários</title>
+</head>
+<body>
+    <h1>Teste de formulários</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="i-nome">Nome</label>
+            <input type="text" name="nome" id="i-nome" required minlength="5" maxlength="30" placeholder="Digite seu nome completo" autocomplete="na
+            ">
+        </p>
+        <p>
+            <label for="i-media">Média</label>
+            <input type="number" name="media" id="i-media" min="0" max="10" placeholder="0 a 10" step="0.5" value="5" required>
+            <!-- O step diz em quantos passos a nota vai mudando,no nosso caso de meio em meio 0.5 Usando o value já apresenta na caixa o valor especificado desabilitando o placeholder -->
+        </p>
+        <p>
+            <label for="i-mes">Periodo letivo</label>
+            <input type="month" name="mes" id="i-mes" max="12" required value="2023-02">
+        </p>
+        <p>
+            <label for="i-dia">Dia da prova</label>
+            <input type="date" name="dia" id="i-dia" required value="2023-02-09">
+        </p>
+        <p>
+            <label for="i-hora">Horário da prova</label>
+            <input type="time" name="hora" id="i-hora" required value="00:00">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
