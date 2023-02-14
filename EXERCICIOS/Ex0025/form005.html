@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudos de tabelas</title>
+</head>
+<body>
+    <h1>Exemplo de formulários</h1>
+    <h3>Elementos "checked" e "radio buttom"</h3>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <!-- Nos input do tipo "radio" sempre colocar o "name" igual para todos.Pois, sem ser assim, ele só permite ser marcado uma vez e um só elemento. Não podendo assim, trocar de um para o outro, caso erre. -->
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="Sexo" id="i-sxman" value="m"><label                for="i-sxman">Homens</label><br>
+            <input type="radio" name="Sexo" id="i-sxfem"  value="f" checked><label                      for="i-sxfem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes fovoritos</legend>
+            <input type="checkbox" name="esport" id="i-esba"> <label for="i-esba">Basquete</label><br>
+            <input type="checkbox" name="esport" id="i-esfot" checked><label for="i-esfot">Fotebol</label><br>
+            <input type="checkbox" name="esport" id="i-esnat"><label for="i-esnat">Natação</label><br>
+            <input type="checkbox" name="esport" id="i-esten"><label for="i-esten">Tênis</label><br>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>
