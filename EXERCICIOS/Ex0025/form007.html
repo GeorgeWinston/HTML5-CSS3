@@ -9,37 +9,39 @@
 <body>
     <h1>Exemplo de formulários</h1>
     <h3>Elementos "option", "datalist", "textarea"</h3>
-    <p>
-        <label for="i-est">Digite o seu estado:</label>
-        <select name="est" id="i-es">
-            <option value="" selected>---Escolha---</option>
-            <optgroup label="Região Sudeste">
-                <option value="MG">Minas Gerais</option>
-                <option value="RJ">Rio de janeiro</option>
-                <option value="SP">São Paulo</option>
-            </optgroup>
-            <optgroup label="Região Nordeste">
-                <option value="PE">Pernambuco</option>
-                <option value="CE">Ceara</option>
-                <option value="BH">Bahia</option>
-            </optgroup>
-        </select>
-    </p>
-    <p>
-        <label for="i-prof">Profissão:</label>
-        <input type="text" name="prof" id="i-prof" list="lstprof">
-        <datalist id="lstprof">
-            <option>Administrador</option>
-            <option>Contador</option>
-            <option>Desenvolvedor</option>
-            <option>Professor</option>
-        </datalist>   
-    </p>
-    <p>
-        <!-- Quando usar o "textarea", SEMPRE deixa o metodo como "post", quando for usado dentro de um formulário -->
-        <label for="i-msg">Mensagem:</label><br>
-        <textarea name="msg" id="i-msg" cols="30" rows="10" placeholder="Sua mengagem aqui!"></textarea>
-    </p>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="i-est">Digite o seu estado:</label>
+            <select name="est" id="i-es">
+                <option value="" selected>---Escolha---</option>
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="PE">Pernambuco</option>
+                    <option value="CE">Ceara</option>
+                    <option value="BH">Bahia</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="i-prof">Profissão:</label>
+            <input type="text" name="prof" id="i-prof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Administrador</option>
+                <option>Contador</option>
+                <option>Desenvolvedor</option>
+                <option>Professor</option>
+            </datalist>
+        </p>
+        <p>
+            <!-- Quando usar o "textarea", SEMPRE deixa o metodo como "post", quando for usado dentro de um formulário -->
+            <label for="i-msg">Mensagem:</label><br>
+            <textarea name="msg" id="i-msg" cols="30" rows="10" placeholder="Sua mengagem aqui!"></textarea>
+        </p>
+    </form>
     <p>
         <input type="submit" value="Enviar">
         <input type="reset" value="limpar">
