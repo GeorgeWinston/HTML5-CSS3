@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* Estilos para telas */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Eu coloquei*/
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+header{
+    background-color: #5f9ea0;
+}
+header > h1{
+    text-align: center;
+}
+/* O display flex fui eu que coloquei */
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    background-color: #808080;
+}
+nav li{
+    /* display: inline-block; */
+    background-color: #524d4d;
+    padding: 10px;
+    color: #fff;
+}
+article{
+    display: block;
+    width: 600px;
+    margin: auto;
+}
+/* Eu coloquei*/
+article > h2{
+    background-color: #5f9ea0;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 15px 0 20px 0;
+    /* margin-top: 10px;
+    margin-bottom: 20px; */
+    text-align: center;
+}
