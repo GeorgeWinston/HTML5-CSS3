@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* Declarações gérais */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #233eff;
+    background-size: cover;  /*O professor tinha colocado "contain"*/
+    background-repeat: no-repeat;
+}
+
+h1{
+    color: #fff;
+    text-shadow: 3px 3px 0px #08178a;
+    padding: 10px;
+}
+
+/* Declarações retrato_portrait */
+
+@media screen and (orientation: portrait) {
+    body{
+        background: url('../imagens/cev-portrait.jpg');
+        background-position:center bottom;
+    }    
+}
+
+/* Declarações paisagem_landscape */
+
+@media screen and (orientation: landscape) {
+    body{
+        background: url('../imagens/cev-landscape.jpg');
+        background-position: left bottom;
+    }
+}
