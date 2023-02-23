@@ -1,7 +1,60 @@
 @charset "UTF-8";
 
-/*  */
+/*CONFIGURAÇÕES BASE DO MENU PARA MOBILE FIRST*/
 
-body{
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
     background-color: #d3d3d3;
+}
+/* Configurações do header _background e h1 */
+header{
+    background-color: #808080;
+}
+header > h1{
+    padding: 10px;
+    text-align: center;
+    text-shadow: 4px 4px 4px #fff;  /* eu coloquei*/
+}
+/* Configurações do menu _ background, ul, a*/
+menu{
+    display: block;
+}
+menu > ul{
+    list-style: none;
+}
+menu > ul >li > a{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #575757;
+    color: #fff;
+    border-top: 2px solid #808080;
+}
+menu > ul > li > a:hover{
+    background-color: #aaa6a6;
+}
+/* Configurações do main _ backgroud */
+main{
+    width: 90vw;
+    margin: auto;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 20px; /* Eu coloquei*/
+    padding: 10px;
+}
+/* Configurações do article _ h2 e ps */
+article > h2{
+    padding-bottom: 20px;
+    text-align: center; /* Eu coloquei*/
+}
+article > p{
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 10px;
 }
